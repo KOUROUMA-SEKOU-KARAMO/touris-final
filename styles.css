@@ -1,0 +1,159 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+*,::after,::before{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body { 
+    text-align: center;
+    min-width: 100vh;
+}
+
+
+ .container{
+     max-width: 1500px;
+     margin: 0 auto; 
+     
+ }
+ .container >div{ 
+     margin: 30px;
+ }
+/* img {
+    width: 200px;
+} */
+
+
+.hero{
+     height: 100vw; 
+    background-size: cover;
+    background-position: center;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    position: relative;
+    height: 70vh;
+}
+  .hero img{
+     position : absolute;
+     z-index: -1;
+     width: 100%;
+     height: 100%;
+     flex:none;
+     object-fit: cover;
+     object-position: top   ;
+
+  }
+ 
+
+ 
+h1, h2{
+     background-color:#457B9D ;
+     max-width: max-content;
+     padding: 10px;
+     border-radius: 5px;
+     color: white;
+}
+
+h1{
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+h2{
+    background:#1D3557 ;
+    max-width: 500px;
+}
+
+.activities{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;  
+    gap: 20px;
+    background: #F1FAEE;
+    padding: 100px 0;
+    color:#457B9D; 
+} 
+.activities-img{
+    display:flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+     
+} 
+.activities_card{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    
+}
+.activities_card img {
+    max-width: 200px;
+}
+.activities-img img{
+    border-radius: 50%;
+} 
+
+.guide{
+     display:flex;
+     /* max-width: 400px; */
+     margin: 20px auto;
+     gap: 10px;
+     background: #A8DADC;
+     border-radius: 10px;
+     padding: 15px;
+     align-items: center;
+}
+.guide-left{ 
+    border: 1px solid white; 
+    border-radius: 5px;
+    
+}
+.guide-left img{
+    height:200px;
+    border-radius: 5px;
+}
+ 
+.guide-right{ 
+    padding: 5px 20px;
+    color:#1D3557; 
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+
+.towns{
+     
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+}
+
+.towns img{ 
+    width: 400px;
+    border-radius: 5px;
+}
+
+.town{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.town img { 
+    
+}
