@@ -79,16 +79,18 @@ h2{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;  
-    gap: 20px;
+    gap: 30px;
     background: #F1FAEE;
     padding: 100px 0;
     color:#457B9D; 
+    flex-wrap: wrap; 
 } 
 .activities-img{
     display:flex;
     align-items: center;
     justify-content: space-around; 
     width: 100%;
+    flex-wrap: wrap!important; 
      
 } 
 .activities_card{
@@ -115,6 +117,9 @@ h2{
      border-radius: 10px;
      padding: 15px;
      align-items: center;
+     /* flex-wrap: wrap; */
+     align-items: center;
+     justify-content: center;
 }
 .guide-left{ 
     border: 1px solid white; 
@@ -133,19 +138,21 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; 
 }
  
 
 .towns{
      
-    display: flex; 
-    flex-direction: column;
-    gap: 20px;
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .towns img{ 
-    width: 400px;
+    width: 100%; 
     border-radius: 5px;
 }
 
@@ -153,6 +160,18 @@ h2{
     display: flex;
     gap: 20px;
     align-items: center;
+    max-width: 350px;
+    /* border: 1px solid teal ; */
+    flex-direction: column;
+    margin-bottom: 50px; 
+    line-height: 1.5;
+    font-family: sans-serif;
+
+}
+ 
+
+.town:hover{
+     border: 1px solid #A8DADC;
 }
 .town img { 
     
